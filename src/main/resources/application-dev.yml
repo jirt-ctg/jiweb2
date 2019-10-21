@@ -1,0 +1,24 @@
+server:
+    port: 8778
+
+debug: true
+
+spring:
+    cloud:
+        zookeeper:
+            connectString: 127.0.0.1:2181
+            enabled: false
+    sleuth:
+        enabled: false
+
+swagger:
+    basePackage: com.string.jiweb2.controller
+    title: ctgpaas-string-jiweb2 RESTful APIs
+    description: ctgpaas-string-jiweb2 RESTful API
+    version: 1.0.0-SNAPSHOT
+    openApi:
+        group: OpenApi
+        basePackage: com.string.jiweb2.controller
+        title: actgpaas-string-jiweb2 Open APIs
+        description: ctgpaas-string-jiweb2 Open API
+        version: 1.0.0-SNAPSHOT
